@@ -25,8 +25,8 @@
 \empresaCliente{Universidad Nacional de Tierra del Fuego}
 
 % Nombre y pertenencia de los jurados, se pueden usar el cualquier lugar del documento con el comando \jurunoname, \jurdosname y \jurtresname y \perteunoname, \pertedosname y \pertetresname.
-\juradoUno{Evaluador anónimo}
-\pertenenciaJurUno{Determinado por la SCyT-UNTDF} 
+\juradoUno{Determinado por la SCyT-UNTDF}
+\pertenenciaJurUno{Evaluador anónimo} 
 \juradoDos{Evaluador anónimo}
 \pertenenciaJurDos{Determinado por la SCyT-UNTDF}
 \juradoTres{Evaluador anónimo}
@@ -34,7 +34,7 @@
  
 \fechaINICIO{22 de junio de 2020}		%Fecha de inicio de la cursada de GdP \fechaInicioName
 \fechaFINALPlanificacion{22 de Agosto de 2020} 	%Fecha de final de cursada de GdP
-\fechaFINALTrabajo{21 de junio de 2021}		%Fecha de defensa pública del trabajo final
+\fechaFINALTrabajo{04 de diciembre de 2020}		%Fecha de defensa pública del trabajo final
 
 
 \begin{document}
@@ -147,7 +147,7 @@ El presente proyecto enmarca la tesis doctoral del Ing. Dell’Osa.
 \rowcolor[HTML]{C0C0C0} 
 Rol           & Nombre y Apellido & Organización 	& Puesto 	\\ \hline
 Auspiciante y cliente  & \clientename      &\empclientename	& Secretario de Ciencia y Tecnología \\ \hline
-Responsable   & \authorname       & \empclientename	& Alumno 	\\ \hline
+Responsable   & \authorname       & \empclientename	& Director 	\\ \hline
 Colaboradores & Ing. Agustín Mailing \newline \newline Lic. Fernando Silva \newline Dr.Alejandro Masner &              Independiente-FIUBA \newline Independiente \newline Universidad de la República (Uruguay)	& - \newline \newline Ref: Clínico \newline - 	\\ \hline
 Equipo        & Dr. Diego Dondo \newline Lic. Guillermo Prisching & FRC-UTN \newline \empclientename & Ref: Electrónica \newline Ref: Software \\ \hline
 \end{tabularx}
@@ -322,7 +322,7 @@ Una vez finalizado el presente proyecto se entregará:
 	\item Pruebas de funcionamiento (15 hs)
 	\end{enumerate}
 
-\item Protocolo de medición y Consentimiento informado (CI) (96 hrs)
+\item Protocolo de medición y consentimiento informado (CI) (96 hrs)
 	\begin{enumerate}
 	\item Escritura del Protocolo de Medición (4 hs)
 	\item Escritura del CI (4 hs)
@@ -374,7 +374,7 @@ De ser necesario indicar los caminos semicríticos y analizar sus tiempos median
 Es recomendable usar colores y un cuadro indicativo describiendo qué representa cada color, como se muestra en el siguiente ejemplo:
 
 
-
+\pagebreak
 \section{8. Diagrama de Gantt}
 \label{sec:gantt}
 
@@ -421,25 +421,54 @@ En la figura \ref{fig:gantt}, se muestra un ejemplo de diagrama de gantt realiza
 
 \end{consigna}
 
+\pagebreak
 \section{9. Matriz de uso de recursos de materiales}
 \label{sec:recursos}
 
-
-\begin{table}[htpb]
+\begin{table}[H]
 \label{tab:recursos}
 \centering
-\begin{tabularx}{\linewidth}{@{}|c|X|X|X|X|X|@{}}
+\begin{tabularx}{\linewidth}{@{}|c|X|X|X|X|X|X|@{}}
 \hline
-\cellcolor[HTML]{C0C0C0} & \cellcolor[HTML]{C0C0C0} & \multicolumn{4}{c|}{\cellcolor[HTML]{C0C0C0}Recursos requeridos (horas)} \\ \cline{3-6} 
-\multirow{-2}{*}{\cellcolor[HTML]{C0C0C0}\begin{tabular}[c]{@{}c@{}}Código\\ WBS\end{tabular}} & \multirow{-2}{*}{\cellcolor[HTML]{C0C0C0}\begin{tabular}[c]{@{}c@{}}Nombre \\ tarea\end{tabular}} & Material 1 & Material 2 & Material 3 & Material 4 \\ \hline
- &  &  &  &  &  \\ \hline
- &  &  &  &  &  \\ \hline
- &  &  &  &  &  \\ \hline
- &  &  &  &  &  \\ \hline
+\cellcolor[HTML]{C0C0C0} & \cellcolor[HTML]{C0C0C0} & \multicolumn{5}{c|}{\cellcolor[HTML]{C0C0C0}Recursos requeridos (horas)} \\ \cline{3-6} 
+\multirow{-2}{*}{\cellcolor[HTML]{C0C0C0}\begin{tabular}[c]{@{}c@{}}Código\\ WBS\end{tabular}} & \multirow{-2}{*}{\cellcolor[HTML]{C0C0C0}\begin{tabular}[c]{@{}c@{}}Nombre \\ tarea\end{tabular}} & Instrumental electrónico & Raspberry Pi4 & Sistema AD5933 & BioZmeter (*) & Copiadora \\ \hline
+1.5 & Elaboración del manual de uso & 0  & 0 & 0  & 0 & \\ \hline
+1.7 & Escritura del informe final &  &  &   &  & \\ \hline
+2.2	& Diseño de circuito de carga &  &  &   &  & \\ \hline
+2.3	& Implementa- ción de circuito de carga &  &  &   &  & \\ \hline
+2.4	& Diseño de circuito de regulación &  &  &   &  & \\ \hline
+2.5	& Implementa- ción de circuito de regulación &  &  &   &  & \\ \hline
+3.1	& Diseño del sistema &  &  &   &  & \\ \hline
+3.2	& Elaboración de la placa del circuito impreso &  &  &   &  & \\ \hline
+3.3	& Ensamble y soldado de la placa del sistema y electrodos aplicables &  &  &   &  & \\ \hline
+4.2 & Desarrollo del firmware de comunicación inalámbrica con dispositivo móvil &  &  &  & & \\ \hline
+
 \end{tabularx}%
 \end{table}
 
+\begin{table}[H]
+\label{tab:recursos}
+\centering
+\begin{tabularx}{\linewidth}{@{}|c|X|X|X|X|X|X|@{}}
+\hline
+\cellcolor[HTML]{C0C0C0} & \cellcolor[HTML]{C0C0C0} & \multicolumn{5}{c|}{\cellcolor[HTML]{C0C0C0}Recursos requeridos (horas)} \\ \cline{3-6} 
+\multirow{-2}{*}{\cellcolor[HTML]{C0C0C0}\begin{tabular}[c]{@{}c@{}}Código\\ WBS\end{tabular}} & \multirow{-2}{*}{\cellcolor[HTML]{C0C0C0}\begin{tabular}[c]{@{}c@{}}Nombre \\ tarea\end{tabular}} & Instrumental electrónico & Raspberry Pi4 & Sistema AD5933 & BioZmeter (*) & Copiadora \\ \hline
+4.3	& Desarrollo del firmware de comunicación con sistema AD5933 &  &  &  & & \\ \hline
+4.4	& Desarrollo del firmware de control &  &  &  & & \\ \hline
+4.5	& Pruebas de funcionamiento &  &  &   &  & \\ \hline
+5.1	& Diagrama- ción de la interfaz (diseño y estructura) &  &  &   &  & \\ \hline
+5.2	& Desarrollo de software &  &  &   &  & \\ \hline
+5.3	& Pruebas de funcionamiento &  &  &   &  & \\ \hline
+7.2	& Mediciones sobre circuitos de componentes pasivos R-C &  &  &  & & \\ \hline
+7.4	& Mediciones sobre sistemas biológicos ex-vivo &  &  &  & & \\ \hline
+7.6	& Mediciones sobre voluntarios humanos &  &  &  & & \\ \hline
 
+\end{tabularx}%
+\end{table}
+
+(*) BioZmeter: es la denominación del dispositivo desarrollado e integrado en la tarea 7.1.
+
+\pagebreak
 \section{10. Presupuesto detallado del proyecto}
 \label{sec:presupuesto}
 
@@ -510,7 +539,7 @@ Descripción &
 \end{tabularx}%
 \end{table}
 
-
+\pagebreak
 \section{11. Matriz de asignación de responsabilidades}
 \label{sec:responsabilidades}
 \begin{consigna}{red}
@@ -564,6 +593,7 @@ Importante: es redundante poner ``I/A'' o ``I/C'', porque para aprobarlo o respo
 
 \end{consigna}
 
+\pagebreak
 \section{12. Gestión de riesgos}
 \label{sec:riesgos}
 

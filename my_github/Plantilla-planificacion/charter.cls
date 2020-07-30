@@ -151,18 +151,20 @@
 	\vspace{3cm}
 	
 	\flushleft
-	{\normalsize Autor:\\}
-	{\Large \authorname \\}
+	{\normalsize Autor y Director:\\}
+	{\Large \authorname \hspace{1px} \pertenenciaDirector \\}
 	\vspace{1cm}
 	
-	{\normalsize Director:\\}
-	{\Large \supname \hspace{1px} (\pertesupname) \\}
-	\vspace{2cm}
+	%{\normalsize Cliente:\\}
+	%{\Large \cliente \hspace{1px} \empresaCliente \\}
+	%\vspace{2cm}
+	
 		
-	{\normalsize Jurados:\\}	
-	{\Large \jurunoname \hspace{1px} (\perteunoame) \\
-			\jurdosname \hspace{1px} (\pertedosame) \\
-			\jurtresname \hspace{1px} (\pertetresame) \par}
+	{\normalsize Jurado:\\}	
+	{\Large \jurunoname \hspace{1px} (\perteunoame) %\\
+			%\jurdosname \hspace{1px} (\pertedosame) \\
+			%\jurtresname \hspace{1px} (\pertetresame) 
+			\par}
 	             
 	
     
