@@ -432,16 +432,16 @@ En la figura \ref{fig:gantt}, se muestra un ejemplo de diagrama de gantt realiza
 \hline
 \cellcolor[HTML]{C0C0C0} & \cellcolor[HTML]{C0C0C0} & \multicolumn{5}{c|}{\cellcolor[HTML]{C0C0C0}Recursos requeridos (horas)} \\ \cline{3-6} 
 \multirow{-2}{*}{\cellcolor[HTML]{C0C0C0}\begin{tabular}[c]{@{}c@{}}Código\\ WBS\end{tabular}} & \multirow{-2}{*}{\cellcolor[HTML]{C0C0C0}\begin{tabular}[c]{@{}c@{}}Nombre \\ tarea\end{tabular}} & Instrumental electrónico & Raspberry Pi4 & Sistema AD5933 & BioZmeter (*) & Copiadora \\ \hline
-1.5 & Elaboración del manual de uso & 0  & 0 & 0  & 0 & \\ \hline
-1.7 & Escritura del informe final &  &  &   &  & \\ \hline
-2.2	& Diseño de circuito de carga &  &  &   &  & \\ \hline
-2.3	& Implementa- ción de circuito de carga &  &  &   &  & \\ \hline
-2.4	& Diseño de circuito de regulación &  &  &   &  & \\ \hline
-2.5	& Implementa- ción de circuito de regulación &  &  &   &  & \\ \hline
-3.1	& Diseño del sistema &  &  &   &  & \\ \hline
-3.2	& Elaboración de la placa del circuito impreso &  &  &   &  & \\ \hline
-3.3	& Ensamble y soldado de la placa del sistema y electrodos aplicables &  &  &   &  & \\ \hline
-4.2 & Desarrollo del firmware de comunicación inalámbrica con dispositivo móvil &  &  &  & & \\ \hline
+1.5 & Elaboración del manual de uso & 0  & 0 & 0  & 0 & 20 \\ \hline
+1.7 & Escritura del informe final & 0 & 0 & 0  & 0 & 15 \\ \hline
+2.2	& Diseño de circuito de carga & 8 & 8 & 0 & 0 & 0\\ \hline
+2.3	& Implementa- ción de circuito de carga & 12 & 12  & 0  & 0 & 0 \\ \hline
+2.4	& Diseño de circuito de regulación & 8 & 8 & 0 & 0 & 0\\ \hline
+2.5	& Implementa- ción de circuito de regulación & 12 & 12  & 0  & 0 & 0 \\ \hline
+3.1	& Diseño del sistema & 40 & 40 & 0  & 0  & 0\\ \hline
+3.2	& Elaboración de la placa del circuito impreso & 30 & 0  & 0  &  0 & 0\\ \hline
+3.3	& Ensamble y soldado de la placa del sistema y electrodos aplicables & 15 & 0 & 0   & 0 & 0\\ \hline
+4.2 & Desarrollo del firmware de comunicación inalámbrica con dispositivo móvil & 0  & 25  & 25 & 0 & 0\\ \hline
 
 \end{tabularx}%
 \end{table}
@@ -453,15 +453,14 @@ En la figura \ref{fig:gantt}, se muestra un ejemplo de diagrama de gantt realiza
 \hline
 \cellcolor[HTML]{C0C0C0} & \cellcolor[HTML]{C0C0C0} & \multicolumn{5}{c|}{\cellcolor[HTML]{C0C0C0}Recursos requeridos (horas)} \\ \cline{3-6} 
 \multirow{-2}{*}{\cellcolor[HTML]{C0C0C0}\begin{tabular}[c]{@{}c@{}}Código\\ WBS\end{tabular}} & \multirow{-2}{*}{\cellcolor[HTML]{C0C0C0}\begin{tabular}[c]{@{}c@{}}Nombre \\ tarea\end{tabular}} & Instrumental electrónico & Raspberry Pi4 & Sistema AD5933 & BioZmeter (*) & Copiadora \\ \hline
-4.3	& Desarrollo del firmware de comunicación con sistema AD5933 &  &  &  & & \\ \hline
-4.4	& Desarrollo del firmware de control &  &  &  & & \\ \hline
-4.5	& Pruebas de funcionamiento &  &  &   &  & \\ \hline
-5.1	& Diagrama- ción de la interfaz (diseño y estructura) &  &  &   &  & \\ \hline
-5.2	& Desarrollo de software &  &  &   &  & \\ \hline
-5.3	& Pruebas de funcionamiento &  &  &   &  & \\ \hline
-7.2	& Mediciones sobre circuitos de componentes pasivos R-C &  &  &  & & \\ \hline
-7.4	& Mediciones sobre sistemas biológicos ex-vivo &  &  &  & & \\ \hline
-7.6	& Mediciones sobre voluntarios humanos &  &  &  & & \\ \hline
+4.3	& Desarrollo del firmware de comunicación con sistema AD5933 &  0  & 20  & 20 & 0 & 0\\ \hline
+4.4	& Desarrollo del firmware de control &  0  & 30  & 30 & 0 & 0\\ \hline
+4.5	& Pruebas de funcionamiento  & 20  & 20 & 20 & 0 & 0 \\ \hline
+5.2	& Desarrollo de software & 0 & 25 & 25 & 0 & 0 \\ \hline
+5.3	& Pruebas de funcionamiento & 0 & 15 & 15  & 0 & 0 \\ \hline
+7.2	& Mediciones sobre circuitos de componentes pasivos R-C & 2  & 2 & 2 & 2 & 0 \\ \hline
+7.4	& Mediciones sobre sistemas biológicos ex-vivo & 3  & 3 & 3 & 3 & \\ \hline
+7.6	& Mediciones sobre voluntarios humanos & 0 & 40 & 40  & 40 & 0\\ \hline
 
 \end{tabularx}%
 \end{table}
@@ -472,15 +471,8 @@ En la figura \ref{fig:gantt}, se muestra un ejemplo de diagrama de gantt realiza
 \section{10. Presupuesto detallado del proyecto}
 \label{sec:presupuesto}
 
-\begin{consigna}{red}
-Si el proyecto es complejo entonces separarlo en partes:
-\begin{itemize}
-\item Un total global, indicando el subtotal acumulado por cada una de las áreas.
-\item El desglose detallado del subtotal de cada una de las áreas.
-\end{itemize}
-
-IMPORTANTE: No olvidarse de considerar los COSTOS INDIRECTOS.
-
+\begin{consigna}{black}
+El presente proyecto se lleva adelante al interno del IDEI-UNTDF, los costos indirectos corren por cuenta de la institución siendo información que no está al alcance de un director de un proyecto de investigación y desarrollo, razón por la cual se detallan los costos pero no se colocan valores.
 \end{consigna}
 
 \begin{table}[htpb]
@@ -494,24 +486,62 @@ Descripción &
   \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Cantidad} &
   \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Valor unitario} &
   \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Valor total} \\ \hline
- &
-  \multicolumn{1}{c|}{} &
-  \multicolumn{1}{c|}{} &
-  \multicolumn{1}{c|}{} \\ \hline
- &
-  \multicolumn{1}{c|}{} &
-  \multicolumn{1}{c|}{} &
-  \multicolumn{1}{c|}{} \\ \hline
-\multicolumn{1}{|l|}{} &
-   &
-   &
-   \\ \hline
-\multicolumn{1}{|l|}{} &
-   &
-   &
-   \\ \hline
+ Raspberry Pi 4 4gb con Kit & 
+  \multicolumn{1}{c|}{2} & 
+  \multicolumn{1}{c|}{15629,00} & 
+  \multicolumn{1}{c|}{31258,00} \\ \hline
+Capacitores 885060 (kit de varios valores y cantidades) &
+  \multicolumn{1}{c|}{1} & 
+  \multicolumn{1}{c|}{14805,00} & 
+  \multicolumn{1}{c|}{14805,00} \\ \hline
+ Resistores KIT-RMCF0402FT-04 (kit de varios valores y cantidades) &
+   \multicolumn{1}{c|}{1} & 
+  \multicolumn{1}{c|}{3999,47} & 
+  \multicolumn{1}{c|}{3999,47} \\ \hline
+Diodos TPD2E001DRLRG4 &
+   \multicolumn{1}{c|}{5} & 
+  \multicolumn{1}{c|}{47,38} & 
+  \multicolumn{1}{c|}{236,90} \\ \hline
+Integrados MIC5319-3.3YD5-TR & 
+  \multicolumn{1}{c|}{4} & 
+  \multicolumn{1}{c|}{139,59} & 
+  \multicolumn{1}{c|}{558,36} \\ \hline
+Integrados AD5933 &
+  \multicolumn{1}{c|}{4} & 
+  \multicolumn{1}{c|}{4104,00} & 
+  \multicolumn{1}{c|}{16416,00} \\ \hline
+Integrado LTC1044ACS8 &
+   \multicolumn{1}{c|}{4} & 
+  \multicolumn{1}{c|}{618,64} & 
+  \multicolumn{1}{c|}{2474,56} \\ \hline
+kit Conectores 0766500009 &
+   \multicolumn{1}{c|}{1} & 
+  \multicolumn{1}{c|}{8441,61} & 
+  \multicolumn{1}{c|}{8441,61} \\ \hline
+Integrados OPA2376AIDGKR &
+   \multicolumn{1}{c|}{5} & 
+  \multicolumn{1}{c|}{221,02} & 
+  \multicolumn{1}{c|}{1105,10} \\ \hline
+Bateria  (modelo a definir) &
+  \multicolumn{1}{c|}{2} & 
+  \multicolumn{1}{c|}{5000,00} & 
+  \multicolumn{1}{c|}{10000,00} \\ \hline
+Latiguillos de electrocardiografía (set x5) &
+  \multicolumn{1}{c|}{2} &
+  \multicolumn{1}{c|}{1500,00} &
+  \multicolumn{1}{c|}{3000,00} \\ \hline
+Electrodos autoadhesivos/descartables de electrocardiografía (sobre x50) &
+  \multicolumn{1}{c|}{2} &
+  \multicolumn{1}{c|}{352,50} &
+  \multicolumn{1}{c|}{705,00} \\ \hline
+Cables pacientes para monitores multiparamétros con ficha DB15 &
+  \multicolumn{1}{c|}{1} &
+  \multicolumn{1}{c|}{7000,00} &
+  \multicolumn{1}{c|}{7000,00} \\ \hline
+
+
 \multicolumn{3}{|c|}{SUBTOTAL} &
-  \multicolumn{1}{c|}{} \\ \hline
+  \multicolumn{1}{c|}{90000,00} \\ \hline
 \rowcolor[HTML]{C0C0C0} 
 \multicolumn{4}{|c|}{\cellcolor[HTML]{C0C0C0}COSTOS INDIRECTOS} \\ \hline
 \rowcolor[HTML]{C0C0C0} 
@@ -519,22 +549,31 @@ Descripción &
   \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Cantidad} &
   \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Valor unitario} &
   \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Valor total} \\ \hline
-\multicolumn{1}{|l|}{} &
-   &
-   &
-   \\ \hline
-\multicolumn{1}{|l|}{} &
-   &
-   &
-   \\ \hline
-\multicolumn{1}{|l|}{} &
-   &
-   &
-   \\ \hline
+
+ Uso de Laboratorio y oficinas (Internet, Electricidad, Calefacción, etc.) &
+  \multicolumn{1}{c|}{ - } &
+  \multicolumn{1}{c|}{ - } &
+  \multicolumn{1}{c|}{ - } \\ \hline
+  
+ Personal no docente administrativo (SCyT y Secretarias IDEI)  &
+  \multicolumn{1}{c|}{ - } &
+  \multicolumn{1}{c|}{ - } &
+  \multicolumn{1}{c|}{ - } \\ \hline
+  
+ Personal no docente de legales (asesoramiento) &
+  \multicolumn{1}{c|}{ - } &
+  \multicolumn{1}{c|}{ - } &
+  \multicolumn{1}{c|}{ - } \\ \hline
+   
+ Personal docente-investigador involucrado &
+  \multicolumn{1}{c|}{ - } &
+  \multicolumn{1}{c|}{ - } &
+  \multicolumn{1}{c|}{ - } \\ \hline
+  
 \multicolumn{3}{|c|}{SUBTOTAL} &
-  \multicolumn{1}{c|}{} \\ \hline
+  \multicolumn{1}{c|}{ - } \\ \hline
 \rowcolor[HTML]{C0C0C0}
-\multicolumn{3}{|c|}{TOTAL} &
+\multicolumn{3}{|c|}{TOTAL} & 90000,00
    \\ \hline
 \end{tabularx}%
 \end{table}
