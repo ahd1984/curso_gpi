@@ -66,6 +66,7 @@ Revisión & \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Detalles de los cambios 
 1.0      & Creación del documento                                                          & 22/06/2020 \\ \hline
 1.1.1      & Primera entrega (2 $\rightarrow$ 3) para ser revisada (Faltantes: Requerimientos y WBS) & 10/07/2020 \\ \hline
 1.1.2      & Segunda entrega (2 $\rightarrow$ 3) completa para ser revisada  & 17/07/2020 \\ \hline
+1.2      & Primera entrega (3 $\rightarrow$ 4) para ser revisada  & 31/07/2020 \\ \hline
 
 \end{tabularx}
 \end{table}
@@ -550,36 +551,86 @@ Descripción &
 \pagebreak
 \section{11. Matriz de asignación de responsabilidades}
 \label{sec:responsabilidades}
-\begin{consigna}{red}
-Establecer la matriz de asignación de responsabilidades y el manejo de la autoridad completando la siguiente tabla:
+\begin{consigna}{black}
 
-\begin{table}[htpb]
+\begin{table}[H]
 \centering
 \resizebox{\textwidth}{!}{%
-\begin{tabular}{|c|c|c|c|c|c|}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
 \hline
 \rowcolor[HTML]{C0C0C0} 
-\cellcolor[HTML]{C0C0C0} &
-  \cellcolor[HTML]{C0C0C0} &
-  \multicolumn{4}{c|}{\cellcolor[HTML]{C0C0C0}Listar todos los nombres y roles del proyecto} \\ \cline{3-6} 
+%\cellcolor[HTML]{C0C0C0} &
+%  \cellcolor[HTML]{C0C0C0} &
+%  \multicolumn{4}{c|}{\cellcolor[HTML]{C0C0C0}Listar todos los nombres y roles del proyecto} \\ \cline{3-6} 
 \rowcolor[HTML]{C0C0C0} 
 \cellcolor[HTML]{C0C0C0} &
   \cellcolor[HTML]{C0C0C0} &
   Responsable &
-  Orientador &
   Equipo &
+  Equipo &
+  Colaborador &
+  Colaborador &
+  Colaborador &
   Cliente \\ \cline{3-6} 
 \rowcolor[HTML]{C0C0C0} 
-\multirow{-3}{*}{\cellcolor[HTML]{C0C0C0}\begin{tabular}[c]{@{}c@{}}Código\\ WBS\end{tabular}} &
+\multirow{-2}{*}{\cellcolor[HTML]{C0C0C0}\begin{tabular}[c]{@{}c@{}}Código\\ WBS\end{tabular}} &
   \multirow{-3}{*}{\cellcolor[HTML]{C0C0C0}Nombre de la tarea} &
-  \authorname &
-  \supname &
-  Nombre de alguien &
-  \clientename \\ \hline
- &  &  &  &  &  \\ \hline
- &  &  &  &  &  \\ \hline
- &  &  &  &  &  \\ \hline
-\end{tabular}%
+  Dell'Osa &
+  Prisching &
+  Dondo &
+  Silva &
+  Mailing &
+  Masner &
+  Santiago  \\ \hline
+1  & \textbf{Gestión general de proyecto}   &  &  &  &  &  &  & \\ \hline
+1.1 & Fase de Inicio del proyecto &	P  & S & C  &	C  & & &	A \\ \hline
+1.2	& Definición de Alcance  &	P &	S &	C &	C &	C &	C &	A\\ \hline
+1.3 & Estudio de la normativa IRAM 4220-1 &	S &	 &	P &	 &	C &	 &	 \\ \hline		
+1.4 & Compras y adquisiciones &	P &	S  & & & & & \\ \hline
+1.5 & Elaboración del manual de uso & P & &	S &	C &	C &	C &	 \\ \hline
+1.6 & Rendición de compras y adquisiciones & P & S & & & & & A \\ \hline
+1.7 & Escritura del informe final &	P &	C &	C & & C & &	 A \\ \hline
+2 & \textbf{Sistema autonomía energética}   &  &  &  &  &  &  & \\ \hline
+2.1 & Análisis y elección de batería &  &  & S &  & 	P &  & \\ \hline
+2.2 & Diseño de circuito de carga &  &  & S &  & 	P &  & \\ \hline
+2.3 & Implementación de circuito de carga & A & I & S &  & 	P &  & \\ \hline
+2.4 & Diseño de circuito de regulación &  &  & P &  &	S &  & \\ \hline
+2.5 & Implementación de circuito de regulación &  A & I & P &  & 	S &  & \\ \hline
+3	 & \textbf{Sistema basado en AD5933}	&  &  &  &  &  &  & \\ \hline						
+3.1	 & Diseño del sistema & A &  &	P & & S &  & \\ \hline
+3.2	 & Elaboración de la placa del circuito impreso  & & & P & & S & & \\ \hline
+3.3	 & Ensamble y soldado de la placa del sistema y electrodos aplicables &A &I &P &I & S &  & \\ \hline
+
+								
+4 & \textbf{Software de control y comunicación basado en Raspberry Pi 4} &  &  &  &  &  &  & \\ \hline				
+4.1 & Diagramación de la arquitectura  & C & P & S & & C &  & \\ \hline
+4.2 & Desarrollo del firmware de comunicación inalámbrica con dispositivo móvil &I &P & C	 & & & & \\ \hline
+4.3 & Desarrollo del firmware de comunicación con sistema AD5933 & I & P & C & & C &  & \\ \hline		
+4.4 & Desarrollo del firmware de control & C & P &	& &	S &  & \\ \hline
+4.5 & Pruebas de funcionamiento & A & P & S & &	C &  & \\ \hline
+
+5 & \textbf{Software de interfaz con el usuario} &  &  &  &  &  &  & \\ \hline	
+5.1 & Diagramación de la interfaz (diseño y estructura)& A & P &	& C & &	C &	 \\ \hline
+5.2	& Desarrollo de software &A & P & S & & & & \\ \hline								
+
+5.3	& Pruebas de funcionamiento & A & P & S & C & & C & \\ \hline
+6 & \textbf{Protocolo de medición y Consentimiento informado (CI)} &  &  &  &  &  &  & \\ \hline
+6.1 & Escritura del Protocolo de Medición & I &  &  & P &  & S & \\ \hline
+6.2 & Escritura del CI  & I &  &  & S &  & P & 	\\ \hline
+6.3 & Primer Envío del protocolo y el CI a comité de bioética externos (CBE) para su revisión & P &  &  & C &  & S & A  \\ \hline
+6.4 & Corrección del protocolo y CI a partir de la devolución del CBE & I &  &  & P & & S &	\\ \hline
+6.5 & Segundo Envío del protocolo y el CI a CBE para su aprobación definitiva & P &  &  & C &  & S & A  \\ \hline
+7 & \textbf{Ensayo integral de funcionamiento del dispositivo}	&  &  &  &  &  &  & \\ \hline						
+7.1 & Implementación integral del dispositivo & A & S & P &  & C &  & 	\\ \hline
+7.2 & Mediciones sobre circuitos de componentes pasivos R-C & P &  & S &  & C &  & 	\\ \hline	
+7.3 & Análisis de mediciones en circuito R-C & P & I & S &  & C &  & \\ \hline		
+7.4 & Mediciones sobre sistemas biológicos ex-vivo & P &  & S &  & 	C & C & \\ \hline
+7.5 & Análisis de mediciones en sistemas biológicos ex-vivo & P & I & S &  & C & C & \\ \hline	
+7.6 & Mediciones sobre voluntarios humanos & S  &  &  & P &  & 	A & \\ \hline
+7.7 & Análisis de mediciones sobre seres humanos & S & I &  & P & C & A & I \\ \hline
+
+
+ \end{tabular}%
 }
 \end{table}
 
@@ -594,10 +645,10 @@ Referencias:
 \end{itemize}
 } %footnotesize
 
-Una de las columnas debe ser para el Director, ya que se supone que participará en el proyecto.
-A su vez se debe cuidar que no queden muchas tareas seguidas sin ``A'' o ``I''.
-
-Importante: es redundante poner ``I/A'' o ``I/C'', porque para aprobarlo o responder consultas primero la persona debe ser informada.
+%Una de las columnas debe ser para el Director, ya que se supone que participará en el proyecto.
+%A su vez se debe cuidar que no queden muchas tareas seguidas sin ``A'' o ``I''.
+%
+%Importante: es redundante poner ``I/A'' o ``I/C'', porque para aprobarlo o responder %consultas primero la persona debe ser informada.
 
 \end{consigna}
 
