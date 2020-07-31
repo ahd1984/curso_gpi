@@ -70,6 +70,7 @@
 \usepackage{tabularx}
 \usepackage{pgfgantt} 
 \usepackage{graphicx}
+\usepackage{rotating}
 
 
 %\usepackage{tikz}

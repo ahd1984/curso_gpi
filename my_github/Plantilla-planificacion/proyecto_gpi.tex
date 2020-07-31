@@ -74,7 +74,6 @@ Revisión & \multicolumn{1}{c|}{\cellcolor[HTML]{C0C0C0}Detalles de los cambios 
 \pagebreak
 
 
-
 \section{Acta de Constitución del Proyecto}
 \label{sec:acta}
 
@@ -115,7 +114,7 @@ El Ing. Dell'Osa con colegas externos a este proyecto ha realizado modelos físi
 
 En el presente proyecto consta del desarrollo de un prototipo preliminar de un analizador multifrecuencia de bioimpedancia portátil para mediciones no invasivas en seres humanos que permita cuantificar la integración ósea de huesos largos en una escala y una intefaz interpretable por el usuario-médico.
 
-En la Figura \ref{fig:diagBloques_borrador} se muestra en un diagrama en bloques las partes principales del sistema a desarrollar. El sistema de control, comunicación y grabado de mediciones está implementado por medio de Raspeberry Pi 4 que se comunica por medio de I2C con un sistemas basado en el AD5933 que es el encargado de tomar las mediciones en configuración bipolar. La interfaz con el usuario-médico se brindará por medio de una aplicación para Smartphone, tablet y PC, la comunicación entre este dispositivo y la Raspberry Pi 4 será inalámbrica (WiFi o Bluetooth).
+En la Figura \ref{fig:diagBloques} se muestra en un diagrama en bloques las partes principales del sistema a desarrollar. El sistema de control, comunicación y grabado de mediciones está implementado por medio de Raspeberry Pi 4 que se comunica por medio de I2C con un sistemas basado en el AD5933 que es el encargado de tomar las mediciones en configuración bipolar. La interfaz con el usuario-médico se brindará por medio de una aplicación para Smartphone, tablet y PC, la comunicación entre este dispositivo y la Raspberry Pi 4 será inalámbrica (WiFi o Bluetooth).
 
 El circuito integrado AD5933 (Analog Devices, USA) tiene en sí mismo implementadas las soluciones necesarias al análisis espectróscopico de impedancia. El sistema basado en este integrado es una de las tareas de este proyecto.
 
@@ -386,7 +385,7 @@ Cantidad total de horas: 668.
 \begin{figure}[H]
 \centering 
 \includegraphics[width=1.0\textwidth]{./Figuras/gantt_final.png}
-\caption{Diagrama de Gantt de EWB}
+\caption{Diagrama de Gantt con las tareas descritas por su código}
 \label{fig:gantt}
 \end{figure}
 \end{consigna}
@@ -553,9 +552,10 @@ Descripción &
 \label{sec:responsabilidades}
 \begin{consigna}{black}
 
-\begin{table}[H]
+\begin{table}[htpb]
 \centering
-\resizebox{\textwidth}{!}{%
+\begin{turn}{270}
+\resizebox{1.4\textwidth}{!}{%
 \begin{tabular}{|c|c|c|c|c|c|c|c|c|}
 \hline
 \rowcolor[HTML]{C0C0C0} 
@@ -632,10 +632,11 @@ Descripción &
 
  \end{tabular}%
 }
+\end{turn}
 \end{table}
 
 {\footnotesize
-Referencias:
+Referencias de la siguiente tabla:
 \begin{itemize}
 	\item P = Responsabilidad Primaria
 	\item S = Responsabilidad Secundaria
