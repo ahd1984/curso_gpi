@@ -19,7 +19,7 @@
 %----------------------------------------------------------------------------------------
 %	DEFINE CUSTOM PLAN INFORMATION COMMANDS 
 %----------------------------------------------------------------------------------------
-%TODO Uniformizar el nombre de los comandos a camelCase
+%%TODO Uniformizar el nombre de los comandos a camelCase
 \def\authorname{}
 \def\ttitle{}
 \newcommand*{\director}[1]{\def\supname{#1}}
@@ -51,7 +51,7 @@
 
 
 
-\def\@title{Plan de proyecto de Trabajo Final} %TODO ver si se puede agregar el campo con el nombre del autor acá
+\def\@title{Plan de proyecto de Trabajo Final} %%TODO ver si se puede agregar el campo con el nombre del autor acá
 
 %---------- LOAD PACKAGES ----------
 \usepackage{amsmath,amsthm,amssymb}
