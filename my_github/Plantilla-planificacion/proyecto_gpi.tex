@@ -599,13 +599,13 @@ Descripción &
 \rowcolor[HTML]{C0C0C0} 
 \multirow{-2}{*}{\cellcolor[HTML]{C0C0C0}\begin{tabular}[c]{@{}c@{}}Código\\ WBS\end{tabular}} &
   \multirow{-3}{*}{\cellcolor[HTML]{C0C0C0}Nombre de la tarea} &
-  Dell'Osa &
-  Prisching &
-  Dondo &
-  Silva &
-  Mailing &
-  Masner &
-  Santiago  \\ \hline
+  Ing.Dell'Osa &
+  Lic.Prisching &
+  Dr.Dondo &
+  Lic.Silva &
+  Ing.Mailing &
+  Dr.Masner &
+  Dr.Santiago  \\ \hline
 1  & \textbf{Gestión general de proyecto}   &  &  &  &  &  &  & \\ \hline
 1.1 & Fase de Inicio del proyecto &	P  & S & C  &	C  & & &	A \\ \hline
 1.2	& Definición de Alcance  &	P &	S &	C &	C &	C &	C &	A\\ \hline
@@ -856,27 +856,27 @@ El plan de comunicación del proyecto es el siguiente:
 % \usepackage{graphicx}
 % \usepackage[table,xcdraw]{xcolor}
 % If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
-\begin{table}[htpb]
+\begin{table}[H]
 \centering
-\resizebox{\textwidth}{!}{%
-\begin{tabular}{|c|c|c|c|c|c|}
+\begin{tabularx}{\linewidth}{@{}|X|X|X|X|X|X|@{}}
 \hline
 \rowcolor[HTML]{C0C0C0} 
-\multicolumn{6}{|c|}{\cellcolor[HTML]{C0C0C0}PLAN DE COMUNICACIÓN DEL PROYECTO}           \\ \hline
+\multicolumn{6}{|c|}{\cellcolor[HTML]{C0C0C0}PLAN DE COMUNICACIÓN DEL PROYECTO}                                                                       \\ \hline
 \rowcolor[HTML]{C0C0C0} 
 ¿Qué comunicar? & Audiencia & Propósito & Frecuencia & Método de comunicac. & Responsable \\ \hline
 Aprobación y adjudicación del proyecto & Todos los interesados & Dar inicio a las actividades & Única vez & Correo electrónico & Ing. Dell'Osa \\ \hline
-Compras y adquisiciones & Lic. Prisching, Dr. Dondo, Ing. Mailing  & Grado de avance de las adquisiciones & Semanalmente(*)  & Correo Electrónico & Ing. Dell'Osa \\ \hline
-Estado de hardware & Ing. Dell'Osa, Lic. Prisching, Ing. Mailing & Grado de avance de hardware & Quincenalmente & Videoconferencia & Dr. Dondo \\ \hline
-Estado de software & Ing. Dell'Osa, Dr. Dondo, Ing. Mailing & Grado de avance del software & Quincenalmente & Vía Zoom & Lic. Prisching \\ \hline
-Estado del Protocolo de medición y CI & Lic. Silva, Dr. Masner & Grado de avance de escritura y aprobación & Semanalmente & Correo Electrónico & Ing. Dell'Osa \\ \hline
-Desarrollo de interfaz-usuario & Ing. Dell'Osa, Lic. Silva, Dr. Masner & Relevar requerimientos y previsualizaciones con usuarios-medicos & Semanalmente (*) &  &             \\ \hline
-Mediciones realizadas con prototipo funcional & Todos los interesados & Correcto funcionamiento y/o posibles ajustes  &           Semanalmente(*) & Videoconferencia y correo electrónico & Ing. Dell'Osa\\ \hline
+Compras y adquisiciones & Lic. Prisching, Dr. Dondo, Ing. Mailing  & Grado de avance de las adquisiciones & Semanal(*)  & Correo electrónico & Ing. Dell'Osa \\ \hline
+Estado de hardware & Ing. Dell'Osa, Lic. Prisching, Ing. Mailing & Grado de avance de hardware & Quincenal & Videoconfe- rencia & Dr. Dondo \\ \hline
+Estado de software & Ing. Dell'Osa, Dr. Dondo, Ing. Mailing & Grado de avance del software & Quincenal & Videoconfe- rencia & Lic. Prisching \\ \hline
+Estado del Protocolo de medición y CI & Lic. Silva, Dr. Masner & Grado de avance de escritura y aprobación & Semanal & Correo electrónico & Ing. Dell'Osa \\ \hline
+Desarrollo de interfaz-usuario & Ing. Dell'Osa, Lic. Silva, Dr. Masner & Relevar requerimientos y previsualizaciones con usuarios-medicos & Semanal(*) & Videoconfe- rencia & Lic. Prisching            \\ \hline
+Mediciones realizadas con prototipo funcional & Todos los interesados & Correcto funcionamiento y/o posibles ajustes  & Semanal(*) & Videoconfe- rencia y correo electrónico & Ing. Dell'Osa\\ \hline
 Informe final & Todos los interesados & Presentación final del proyecto y rendición de gestión & Única vez & Reunión personal y videoconferencia & Ing. Dell'Osa \\ \hline
-
-\end{tabular}%
-}
+\end{tabularx}%
+%}
 \end{table}
+
+
 
 {\footnotesize
 Referencias de la tabla:
@@ -913,14 +913,7 @@ Las compras en todos los casos se realizarán por medio de pago con tarjeta déb
 \section{16. Seguimiento y control}
 \label{sec:seguimiento}
 
-\begin{consigna}{red}
-Para cada tarea del proyecto establecer la frecuencia y los indicadores con los se seguirá su avance y quién será el responsable de hacer dicho seguimiento y a quién debe comunicarse la situación (en concordancia con el Plan de Comunicación del proyecto).
-
-El indicador de avance tiene que ser algo medible, mejor incluso si se puede medir en \% de avance. Por ejemplo,se pueden indicar en esta columna cosas como ``cantidad de conexiones ruteadeas'' o ``cantidad de funciones implementadas'', pero no algo genérico y ambiguo como ``\%'', porque el lector no sabe porcentaje de qué cosa.
-
-\end{consigna}
-
-\begin{table}[!htpb]
+\begin{table}[H]
 \centering
 \begin{tabularx}{\linewidth}{@{}|X|X|X|X|X|X|@{}}
 \hline
@@ -928,45 +921,81 @@ El indicador de avance tiene que ser algo medible, mejor incluso si se puede med
 \multicolumn{6}{|c|}{\cellcolor[HTML]{C0C0C0}SEGUIMIENTO DE AVANCE}                                                                       \\ \hline
 \rowcolor[HTML]{C0C0C0} 
 Tarea del WBS & Indicador de avance & Frecuencia de reporte & Resp. de seguimiento & Persona a ser informada & Método de comunic. \\ \hline
-Fase de Inicio del proyecto &  &  &  &  &  \\ \hline
-Definición de Alcance &  &  &  &  &  \\ \hline
-Estudio de la normativa IRAM 4220-1 &  &  &  &  &  \\ \hline
-Compras y adquisiciones &  &  &  &  &  \\ \hline
-Elaboración del manual de uso &  &  &  &  &  \\ \hline
-Rendición de compras y adquisiciones  &  &  &  &  &  \\ \hline
-Escritura del informe final &  &  &  &  &  \\ \hline
-Análisis y elección de batería &  &  &  &  &  \\ \hline
-Diseño de circuito de carga &  &  &  &  &  \\ \hline
-Implementación de circuito de carga  &  &  &  &  &  \\ \hline
-Diseño de circuito de regulación &  &  &  &  &  \\ \hline
-Implementación de circuito de regulación  &  &  &  &  &  \\ \hline
-Diseño del sistema basado en AD5933 &  &  &  &  &  \\ \hline
-Elaboración de la placa del circuito impreso  &  &  &  &  &  \\ \hline
-Ensamble y soldado de la placa del sistema y electrodos aplicables  &  &  &  &  &  \\ \hline
-Diagramación de la arquitectura &  &  &  &  &  \\ \hline
-Desarrollo del firmware de comunicación inalámbrica con dispositivo móvil &  &  &  &  &  \\ \hline
-Desarrollo del firmware de comunicación con sistema AD5933 &  &  &  &  &  \\ \hline
-Desarrollo del firmware de control &  &  &  &  &  \\ \hline 
-Pruebas de funcionamiento  &  &  &  &  &  \\ \hline
-Diagramación de la interfaz (diseño y estructura) &  &  &  &  &  \\ \hline
-Desarrollo de software  &  &  &  &  &  \\ \hline
-Pruebas de funcionamiento &  &  &  &  &  \\ \hline
-Escritura del Protocolo de Medición &  &  &  &  &  \\ \hline
-Escritura del CI &  &  &  &  &  \\ \hline
-Primer Envío del protocolo y el CI a comité de bioética externos (CBE) para su revisión &  &  &  &  &  \\ \hline
-Corrección del protocolo y CI a partir de la devolución del CBE &  &  &  &  &  \\ \hline
-Segundo Envío del protocolo y el CI a CBE para su aprobación definitiva &  &  &  &  &  \\ \hline
-Implementación integral del dispositivo &  &  &  &  &  \\ \hline
-Mediciones sobre circuitos de componentes pasivos R-C &  &  &  &  &  \\ \hline
-Análisis de mediciones en circuito R-C &  &  &  &  &  \\ \hline
-Mediciones sobre sistemas biológicos ex-vivo &  &  &  &  &  \\ \hline
-Análisis de mediciones en sistemas biológicos ex-vivo &  &  &  &  &  \\ \hline
-Mediciones sobre voluntarios humanos  &  &  &  &  &  \\ \hline
-Análisis de mediciones sobre seres humanos &  &  &  &  &  \\ \hline
+Estudio de la normativa IRAM 4220-1 & Realizada & Única vez & Ing. Dell'Osa & Dr. Dondo & Correo electrónico \\ \hline
+Compras y adquisiciones & Cantidad de items adquiridos & Semanal & Ing. Dell'Osa & Lic. Prisching, Dr. Dondo, Ing. Mailing & Correo electrónico \\ \hline
+Elaboración del manual de uso & Cantidad de funciones descriptas & Diario & Ing. Dell'Osa & Dr. Dondo, Lic. Silva & Correo electrónico \\ \hline
+Rendición de compras y adquisiciones  & Realizada & Única vez & Ing. Dell'Osa & Dr. Santiago & Personal- mente \\ \hline
+Escritura del informe final & Cantidad de incisos escritos & Diario & Ing. Dell'Osa & Interesados & Correo electrónico \\ \hline
+Análisis y elección de batería & Cantidad de baterias analizadas & Diario & Ing. Mailing & Dr. Dondo & Correo electrónico \\ \hline
+Diseño de circuito de carga & Realizada & Semanal & Ing. Mailing & Dr. Dondo & Correo electrónico \\ \hline
+Implementa- ción de circuito de carga  &  Realizada & Semanal & Ing. Mailing & Dr. Dondo & Correo electrónico \\ \hline
+Diseño de circuito de regulación & Realizada & Semanal & Ing. Mailing & Dr. Dondo & Correo electrónico \\ \hline
+Implementa- ción de circuito de regulación  & Realizada & Semanal & Ing. Mailing & Dr. Dondo & Correo electrónico \\ \hline
+Diseño del sistema basado en AD5933 & Cantidad de horas trabajadas  & Semanal & Dr. Dondo & Ing. Dell'Osa & Correo electrónico \\ \hline
+Elaboración de la placa del circuito impreso  & Realizada & Diario & Dr. Dondo & Ing. Dell'Osa & Correo electrónico \\ \hline
 \end{tabularx}%
 %}
 \end{table}
 
+
+\begin{table}[H]
+\centering
+\begin{tabularx}{\linewidth}{@{}|X|X|X|X|X|X|@{}}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+\multicolumn{6}{|c|}{\cellcolor[HTML]{C0C0C0}SEGUIMIENTO DE AVANCE}                                                                       \\ \hline
+\rowcolor[HTML]{C0C0C0} 
+Tarea del WBS & Indicador de avance & Frecuencia de reporte & Resp. de seguimiento & Persona a ser informada & Método de comunic. \\ \hline
+Ensamble y soldado de la placa del sistema y electrodos aplicables  & Realizada & Semanal & Dr. Dondo & Ing. Dell'Osa & Correo electrónico \\ \hline
+Diagramación de la arquitectura & Cantidad de horas trabajadas & Diario & Lic. Prisching & Ing. Dell'Osa & Correo electrónico \\ \hline
+Desarrollo del firmware de comunicación inalámbrica con dispositivo móvil & Cantidad de horas trabajadas & Diario & Lic. Prisching & Dr. Dondo & Correo electrónico \\ \hline
+Desarrollo del firmware de comunicación con sistema AD5933 & Cantidad de horas trabajadas & Diario & Lic. Prisching & Dr. Dondo & Correo electrónico \\ \hline
+Desarrollo del firmware de control & Cantidad de horas trabajadas & Diario  & Dr. Dondo & Dr. Dondo & Correo electrónico \\ \hline
+Pruebas de funcionamiento  & Realizada & Diario &  Dr. Dondo & Ing. Dell'Osa & Videoconfe- rencia \\ \hline
+Diagramación de la interfaz (diseño y estructura) &  Cantidad de horas trabajadas & Semanal & Lic. Prisching & Dr. Dondo & Videoconfe- rencia \\ \hline
+Desarrollo de software  & Cantidad de requisitos implementados & Semanal & Lic. Prisching & Dr. Dondo & Videocofe- rencia \\ \hline
+Pruebas de funcionamiento & Realizada & Diaria & Lic. Prisching & Ing. Dell'Osa & Correo electrónico \\ \hline
+Escritura del Protocolo de Medición & Cantidad de incisos escritos & Semanal & Dr. Masner & Lic. Silva & Videoconfe- rencia \\ \hline
+Escritura del CI & Cantidad de incisos escritos  & Semanal & Dr. Masner & Lic. Silva & Videoconfe- rencia \\ \hline
+\end{tabularx}%
+%}
+\end{table}
+
+\begin{table}[H]
+\centering
+\begin{tabularx}{\linewidth}{@{}|X|X|X|X|X|X|@{}}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+\multicolumn{6}{|c|}{\cellcolor[HTML]{C0C0C0}SEGUIMIENTO DE AVANCE}                                                                       \\ \hline
+\rowcolor[HTML]{C0C0C0} 
+Tarea del WBS & Indicador de avance & Frecuencia de reporte & Resp. de seguimiento & Persona a ser informada & Método de comunic. \\ \hline
+Primer Envío del protocolo y el CI a comité de bioética externos (CBE) para su revisión & Realizada & Semanal & Ing. Dell'Osa & Dr. Masner, Lic. Silva & Correo electrónico \\ \hline
+Corrección del protocolo y CI a partir de la devolución del CBE & Devolución del CBE  & Semanal & Dr. Masner & Lic. Silva, Ing. Dell'Osa & Correo electrónico \\ \hline
+Segundo Envío del protocolo y el CI a CBE para su aprobación definitiva & Realizada  & Semanal & Dr. Masner & Lic. Silva, Ing. Dell'Osa & Videoconfe- rencia \\ \hline
+Implementa- ción integral del dispositivo & Cantidad de horas trabajadas & Semanal & Dr. Dondo & Ing. Dell'Osa & Videoconfe- rencia \\ \hline
+Mediciones sobre circuitos de componentes pasivos R-C & Realizada & Semanal & Ing. Dell'Osa & Dr. Dondo, Dr. Masner & Correo eletrónico \\ \hline
+Análisis de mediciones en circuito R-C & Realizada & Semanal & Ing. Dell'Osa & Dr. Dondo, Dr. Masner & Correo eletrónico \\ \hline
+Mediciones sobre sistemas biológicos ex-vivo & Realizada & Semanal & Ing. Dell'Osa &  Dr. Dondo, Dr. Masner & Correo eletrónico  \\ \hline
+Análisis de mediciones en sistemas biológicos ex-vivo & Realizada & Semanal & Ing. Dell'Osa  &  Dr. Dondo, Dr. Masner & Correo eletrónico  \\ \hline
+\end{tabularx}%
+%}
+\end{table}
+
+\begin{table}[H]
+\centering
+\begin{tabularx}{\linewidth}{@{}|X|X|X|X|X|X|@{}}
+\hline
+\rowcolor[HTML]{C0C0C0} 
+\multicolumn{6}{|c|}{\cellcolor[HTML]{C0C0C0}SEGUIMIENTO DE AVANCE}                                                                       \\ \hline
+\rowcolor[HTML]{C0C0C0} 
+Tarea del WBS & Indicador de avance & Frecuencia de reporte & Resp. de seguimiento & Persona a ser informada & Método de comunic. \\ \hline
+Mediciones sobre voluntarios humanos  & Cantidad de voluntarios medidos & Semanal & Dr. Masner & Ing. Dell'Osa & Videoconfe- rencia \\ \hline
+Análisis de mediciones sobre seres humanos & Cantidad de horas trabajadas & Semanal & Dr. Masner &  Ing. Dell'Osa & Videoconfe- rencia  \\ \hline
+\end{tabularx}%
+%}
+\end{table}
+
+El indicador de avance "Realizada" es un parámetro binario (SI/NO), el resto son cantidad medibles.
 	
 \pagebreak
 \section{17. Procesos de cierre}    
