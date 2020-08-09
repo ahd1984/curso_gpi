@@ -719,11 +719,11 @@ Riesgo 5: Inaccesibilidad a una institución de salud para tomar mediciones sobr
 \hline
 \rowcolor[HTML]{C0C0C0} 
 Riesgo & S & O & RPN & S* & O* & RPN* \\ \hline
-1.Demora en la entrega del subsidio económico brindado por la SCyT-UNTDF & 10 & 7 & 70 & 10 & 3 & 30 \\ \hline
-2.Demoras e inconvenientes con procesos de compras y adquisiciones & 10 & 6 & 60 & 3 & 5 & 15 \\ \hline
-3.Rotura del integrado AD5933  y Raspberry Pi por configuración eléctrica errónea & 10 & 5 & 50 & 5 & 3 & 15 \\ \hline
+1.Demora en la entrega del subsidio económico brindado por la SCyT-UNTDF & 10 & 7 & 70 & 10* & 3* & 30* \\ \hline
+2.Demoras e inconvenientes con procesos de compras y adquisiciones & 10 & 6 & 60 & 3* & 5* & 15* \\ \hline
+3.Rotura del integrado AD5933  y Raspberry Pi por configuración eléctrica errónea & 10 & 5 & 50 & 5* & 3* & 15* \\ \hline
 4.Deserción de algún miembro del equipo o colaborador & 8 & 3 & 24 &    &    &      \\ \hline
-5.Inaccesibilidad a una institución de salud para tomar mediciones sobre pacientes fracturados & 9 & 5 & 45 & 4 & 3 & 12 \\ \hline
+5.Inaccesibilidad a una institución de salud para tomar mediciones sobre pacientes fracturados & 9 & 5 & 45 & 4* & 3* & 12* \\ \hline
 \end{tabularx}%
 \end{table}
 
@@ -764,26 +764,22 @@ Mitigación: Incorporar a instituciones de salud externas al ámbito local, incl
 
 \end{consigna}
 
-
+\pagebreak
 \section{13. Gestión de la calidad}
 \label{sec:calidad}
 
-\begin{consigna}{red}
-
-VERIFICAR QUE SIEMPRE QUE HABLO DEL DESARROLLO SEA "PROTOTIPO" Y CUANDO HABLO DE CELULAR/PC/TABLET SEA "DISPOSITIVOS"
-
-
+\begin{consigna}{black}
 \begin{enumerate}
 \item Grupo de requerimientos asociados con la normativa vigente
 	\begin{enumerate}
 	\item Se debe cumplir con la normativa IRAM 4220-1 (Seguridad eléctrica de equipamiento médico)
 	\begin{itemize}
-		\item Verificación: Medir de corrientes aplicadas por electrodos aplicables y corrientes de fugas por carcaza.\\
+		\item Verificación: Medir de corrientes aplicadas por electrodos aplicables y corrientes de fugas por la carcaza.
 		\item Validación: Certificado de Laboratorio de Metrología\\
 	\end{itemize}
 	\item Se debe cumplir con la normativa de principios éticos para las investigaciones médicas en seres humanos
 	\begin{itemize}
-		\item Verificación: Verificar el cumplimiento del escrito elaborado con lo estipulado en la declaración de Helsinki del año 2000.\\
+		\item Verificación: Verificar el cumplimiento del escrito elaborado con lo estipulado en la declaración de Helsinki del año 2000.
 		\item Validación: Acta de aprobación de comité de bioética.\\
 	\end{itemize}
 	\end{enumerate}
@@ -792,17 +788,17 @@ VERIFICAR QUE SIEMPRE QUE HABLO DEL DESARROLLO SEA "PROTOTIPO" Y CUANDO HABLO DE
 	\begin{enumerate}
 	\item Se debe contar con tres pares de electrodos aplicables de forma no invasiva para configuración de electrodos bipolar y selección por interruptor manual.
 	\begin{itemize}
-		\item Verificación: Contar la cantidad de electrodos y medir cada par de ellos son fantomas eléctricos. \\
+		\item Verificación: Contar la cantidad de electrodos y realizar mediciones con cada par de ellos sobre fantomas eléctricos. 
 		\item Validación: Demostración sobre fantomas seleccionando desde la interfaz de usuario cada uno de los tres pares de electrodos.\\
 	\end{itemize}	
 	\item Se debe poseer una resolución de la medición en orden de los 10 ohmios.
 	\begin{itemize}
-		\item Verificación: Tomar mediciones sobre fantomas eléctricos con resistencias variables de alta precisión en los rangos de la precisión necesaria y comparación con simulaciones computacionales. \\
+		\item Verificación: Tomar mediciones sobre fantomas eléctricos con resistencias variables de alta precisión en los rangos de la precisión necesaria y comparar con simulaciones computacionales.
 		\item Validación: Certificado de Laboratorio de Metrología.\\
 	\end{itemize}
 	\item No se debe configurar el rango de frecuencias de señales aplicables (será fijo entre 5kHz y 100kHz).
 	\begin{itemize}
-		\item Verificación: Realizar mediciones con espectroscopio.\\
+		\item Verificación: Realizar mediciones con espectroscopio.
 		\item Validación: Demostración de una medida estándar sobre fantoma y nuestra de resultado en forma gráfica en el dominio de la frecuencia.\\
 	\end{itemize}
 	\end{enumerate}
@@ -811,13 +807,13 @@ VERIFICAR QUE SIEMPRE QUE HABLO DEL DESARROLLO SEA "PROTOTIPO" Y CUANDO HABLO DE
 	\item Se debe contar con la visualización del módulo de la bioimpedancia en el dominio de la frecuencia en gráfico XY.
 	\item Se debe contar con la visualización de los valores numéricos de módulo de bioimpedancia para cada frecuencia.
 \begin{itemize}
-		\item Verificación: Realizar un inspección visual de la interfaz del usuario en la visualización de resultados y la correcta realización del gráfico XY con el dominio en los valores de frecuencia y la imagen en los valores del módulo de impedancia.\\
-		\item Validación: Visualización de los resultados obtenidos en ambos formatos (gráfica y tabla de valores) a partir de la prueba de demostración con un fantoma.\\
+		\item Verificación: Realizar una inspección visual de los resultados obtenidos y la correcta realización del gráfico XY con el dominio en los valores de frecuencia y la imagen en los valores del módulo de impedancia en la interfaz del usuario desarrollada.
+		\item Validación: Visualización de los resultados obtenidos en ambos formatos (gráfico XY y tabla de valores) a partir de la prueba de demostración con un fantoma.\\
 \end{itemize}	
 	\item Se debe poder descargar de los datos medidos en un archivo formato .CSV (o similar) en una memoria extraíble (tipo microSD).
 	\begin{itemize}
-		\item Verificación: Realizar inspección de la generación de archivo con datos separados por comas y de la correcta grabación en memoria extraíble.\\
-		\item Validación: Descarga de los datos y posterior lectura con memoria extraíble con correcta apertura del archivo generado.\\
+		\item Verificación: Realizar inspección de la correcta generación del archivo en el formato correspondiente (datos separados por comas) y de la correcta escritura en una memoria extraíble.
+		\item Validación: Descarga de los datos en una memoria extraíble y apertura del archivo en un PC.\\
 	\end{itemize}
 \end{enumerate}
 
@@ -825,22 +821,22 @@ VERIFICAR QUE SIEMPRE QUE HABLO DEL DESARROLLO SEA "PROTOTIPO" Y CUANDO HABLO DE
 	\begin{enumerate}
 	\item Se debe contar con una autonomía a baterías de al menos 2 horas y conector USB para la carga de la bateria.
 	\begin{itemize}
-		\item Verificación: Calcular de consumo estimativo de Raspberry y componentes electrónicos principales a partir de sus hojas de datos.\\
+		\item Verificación: Calcular de consumo estimado de una Raspberry Pi 4 y componentes electrónicos principales a partir de sus hojas de datos.
 		\item Validación: Prueba de autonomía del prototipo en uso durante dos horas.\\
 	\end{itemize}
 	\item No se deben exceder las dimensiones físicas externas de 15 centímetros de largo, 8 centímetros de ancho y 3 centímetros de espesor.
 	\begin{itemize}
-		\item Verificación: Realizar mediciones de las dimensionales en escala de centímetros.\\
+		\item Verificación: Realizar mediciones de las dimensionales de la carcaza externa en escala de centímetros.
 		\item Validación: Mostrar resultados de las mediciones dimensionales.\\
 	\end{itemize}
 	\item Se debe contar con la disipación térmica conveniente para que la carcasa externa no genere una temperatura perceptible por el usuario.
 	\begin{itemize}
-		\item Verificación: Realizar mediciones térmicas a carcaza cerrada en durante el funcionamiento continuo del dispositivo.\\
+		\item Verificación: Realizar mediciones térmicas a carcaza cerrada durante el funcionamiento continuo del prototipo.
 		\item Validación: Mostrar resultados de las mediciones térmicas.\\
 	\end{itemize}
 	\item Se debe contar con conectividad inálambrica (wifi y/o Bluetooth) a un dispositivo smartphone, tablet o PC-notebook.
 	\begin{itemize}
-		\item Verificación: Inspección del correcto funcionamiento de conectividad en cada uno de los dispositivos detallados.\\
+		\item Verificación: Inspección del correcto funcionamiento de conectividad en cada uno de los dispositivos detallados.
 		\item Validación: Demostración de la prestación en smartphone, tablet o PC-notebook\\
 	\end{itemize}
 	\end{enumerate}
@@ -848,11 +844,11 @@ VERIFICAR QUE SIEMPRE QUE HABLO DEL DESARROLLO SEA "PROTOTIPO" Y CUANDO HABLO DE
 \end{enumerate}
 
 \end{consigna}
-
+\pagebreak
 \section{14. Comunicación del proyecto}
 \label{sec:comunicaciones}
 
-\begin{consigna}{red}
+\begin{consigna}{black}
 El plan de comunicación del proyecto es el siguiente:
 \end{consigna}
 
@@ -869,23 +865,50 @@ El plan de comunicación del proyecto es el siguiente:
 \multicolumn{6}{|c|}{\cellcolor[HTML]{C0C0C0}PLAN DE COMUNICACIÓN DEL PROYECTO}           \\ \hline
 \rowcolor[HTML]{C0C0C0} 
 ¿Qué comunicar? & Audiencia & Propósito & Frecuencia & Método de comunicac. & Responsable \\ \hline
-                &           &           &            &                      &             \\ \hline
-                &           &           &            &                      &             \\ \hline
-                &           &           &            &                      &             \\ \hline
-                &           &           &            &                      &             \\ \hline
-                &           &           &            &                      &             \\ \hline
+Aprobación y adjudicación del proyecto & Todos los interesados & Dar inicio a las actividades & Única vez & Correo electrónico & Ing. Dell'Osa \\ \hline
+Compras y adquisiciones & Lic. Prisching, Dr. Dondo, Ing. Mailing  & Grado de avance de las adquisiciones & Semanalmente(*)  & Correo Electrónico & Ing. Dell'Osa \\ \hline
+Estado de hardware & Ing. Dell'Osa, Lic. Prisching, Ing. Mailing & Grado de avance de hardware & Quincenalmente & Videoconferencia & Dr. Dondo \\ \hline
+Estado de software & Ing. Dell'Osa, Dr. Dondo, Ing. Mailing & Grado de avance del software & Quincenalmente & Vía Zoom & Lic. Prisching \\ \hline
+Estado del Protocolo de medición y CI & Lic. Silva, Dr. Masner & Grado de avance de escritura y aprobación & Semanalmente & Correo Electrónico & Ing. Dell'Osa \\ \hline
+Desarrollo de interfaz-usuario & Ing. Dell'Osa, Lic. Silva, Dr. Masner & Relevar requerimientos y previsualizaciones con usuarios-medicos & Semanalmente (*) &  &             \\ \hline
+Mediciones realizadas con prototipo funcional & Todos los interesados & Correcto funcionamiento y/o posibles ajustes  &           Semanalmente(*) & Videoconferencia y correo electrónico & Ing. Dell'Osa\\ \hline
+Informe final & Todos los interesados & Presentación final del proyecto y rendición de gestión & Única vez & Reunión personal y videoconferencia & Ing. Dell'Osa \\ \hline
+
 \end{tabular}%
 }
 \end{table}
 
+{\footnotesize
+Referencias de la tabla:
+\begin{itemize}
+	\item (*) La frecuencia mencionada será sólo durante el periodo de duración de la tarea.
+	\item Estado de hardware: refiere a las tareas vinculadas con el diseño, desarrollo e implementación de partes electrónicas.
+	\item Estado de software: refiere a las tareas vinculadas con el diseño, desarrollo e implementación arquitectura, firmware y aplicaciones.
+\end{itemize}
+} %footnotesize
+
+\pagebreak
 \section{15. Gestión de Compras}
 \label{sec:compras}
 
-\begin{consigna}{red}
-En caso de tener que comprar elementos o contratar servicios:
-a) Explique con qué criterios elegiría a un proveedor.
-b) Redacte el Statement of Work correspondiente.
+\begin{consigna}{black}
+El proyecto requiere de la adquisición de los insumos que se detallan en la sección \textbf{Presupuesto detallado del proyecto}, las mismas se deben realizar mediante la normativa interna de la UNTDF Ordenanza del Consejo Superior número 005-2016: Régimen especial de contrataciones aplicables a proyectos de investigación, extensión, vinculación tecnológica y servicios a terceros.
+De la misma, y en lo que compete al presente proyecto, se resumen que según su artículo cuarto hay dos modalidades de adquisiciones:
+	\begin{itemize}
+	\item adquisición simple: cuando el monto no exceda la suma equivalente al valor de diez módulos la contratación se realizará sin requerimiento de presupuesto por parte del proveedor;
+	\item comparación de precios: cuando se supere el límite para una adquisición simple y hasta un valor máximo equivalente de ochenta módulos, se deberá acreditar la compra por medio de, al menos, tres presupuestos de distintos oferentes del rubro.
+	\item Al 9 de agosto de 2020 el valor de un módulo es de dos mil pesos argentinos.
+	\end{itemize}
+En cualquiera de los cosas detallados la compra puede ser gestionada por el área de administración de la UNTDF o el investigador a cargo del proyecto podrá solicitar el adelanto del total del dinero correspondiente (según lo establecido en la adjudicación del proyecto) siempre que la cifra sea menor a doscientos mil pesos argentinos.
+
+Los proveedores en Argentina: Electrocomponentes S.A. (CABA), HiTec S.R.L. (Prov. de Buenos Aires) y Medifarm S.R.L. (Ushuaia).
+
+El proveedor en el extranjero: Digikey.com, no cobra el gasto de envío hasta Ushuaia con una compra superior a los ochenta dólares y los couriers con los que trabaja poseen la experiencia necesaria para evitar el cobro excesivo de pasar por la Aduana de Buenos Aires y luego por la de Tierra del Fuego (se recuerda que la provincia de Tierra del Fuego, Antártida e Islas del Atlántico Sur posee un régimen aduanero especial descripto en la Ley Nacional 19.640).
+
+Las compras en todos los casos se realizarán por medio de pago con tarjeta débito automático en la cuenta del responsable del proyecto. Si alguna de las compras llegara a realizarse en el extranjero y se le aplicase el impuesto PAIS, el mismo responsable del proyecto puede realizar la devolución del mismo en la entidad bancaria correspondiente presentado la documentación respectiva.
 \end{consigna}
+
+\pagebreak
 
 \section{16. Seguimiento y control}
 \label{sec:seguimiento}
@@ -905,15 +928,47 @@ El indicador de avance tiene que ser algo medible, mejor incluso si se puede med
 \multicolumn{6}{|c|}{\cellcolor[HTML]{C0C0C0}SEGUIMIENTO DE AVANCE}                                                                       \\ \hline
 \rowcolor[HTML]{C0C0C0} 
 Tarea del WBS & Indicador de avance & Frecuencia de reporte & Resp. de seguimiento & Persona a ser informada & Método de comunic. \\ \hline
- &  &  &  &  &  \\ \hline
- &  &  &  &  &  \\ \hline
- &  &  &  &  &  \\ \hline
- &  &  &  &  &  \\ \hline
- &  &  &  &  &  \\ \hline
+Fase de Inicio del proyecto &  &  &  &  &  \\ \hline
+Definición de Alcance &  &  &  &  &  \\ \hline
+Estudio de la normativa IRAM 4220-1 &  &  &  &  &  \\ \hline
+Compras y adquisiciones &  &  &  &  &  \\ \hline
+Elaboración del manual de uso &  &  &  &  &  \\ \hline
+Rendición de compras y adquisiciones  &  &  &  &  &  \\ \hline
+Escritura del informe final &  &  &  &  &  \\ \hline
+Análisis y elección de batería &  &  &  &  &  \\ \hline
+Diseño de circuito de carga &  &  &  &  &  \\ \hline
+Implementación de circuito de carga  &  &  &  &  &  \\ \hline
+Diseño de circuito de regulación &  &  &  &  &  \\ \hline
+Implementación de circuito de regulación  &  &  &  &  &  \\ \hline
+Diseño del sistema basado en AD5933 &  &  &  &  &  \\ \hline
+Elaboración de la placa del circuito impreso  &  &  &  &  &  \\ \hline
+Ensamble y soldado de la placa del sistema y electrodos aplicables  &  &  &  &  &  \\ \hline
+Diagramación de la arquitectura &  &  &  &  &  \\ \hline
+Desarrollo del firmware de comunicación inalámbrica con dispositivo móvil &  &  &  &  &  \\ \hline
+Desarrollo del firmware de comunicación con sistema AD5933 &  &  &  &  &  \\ \hline
+Desarrollo del firmware de control &  &  &  &  &  \\ \hline 
+Pruebas de funcionamiento  &  &  &  &  &  \\ \hline
+Diagramación de la interfaz (diseño y estructura) &  &  &  &  &  \\ \hline
+Desarrollo de software  &  &  &  &  &  \\ \hline
+Pruebas de funcionamiento &  &  &  &  &  \\ \hline
+Escritura del Protocolo de Medición &  &  &  &  &  \\ \hline
+Escritura del CI &  &  &  &  &  \\ \hline
+Primer Envío del protocolo y el CI a comité de bioética externos (CBE) para su revisión &  &  &  &  &  \\ \hline
+Corrección del protocolo y CI a partir de la devolución del CBE &  &  &  &  &  \\ \hline
+Segundo Envío del protocolo y el CI a CBE para su aprobación definitiva &  &  &  &  &  \\ \hline
+Implementación integral del dispositivo &  &  &  &  &  \\ \hline
+Mediciones sobre circuitos de componentes pasivos R-C &  &  &  &  &  \\ \hline
+Análisis de mediciones en circuito R-C &  &  &  &  &  \\ \hline
+Mediciones sobre sistemas biológicos ex-vivo &  &  &  &  &  \\ \hline
+Análisis de mediciones en sistemas biológicos ex-vivo &  &  &  &  &  \\ \hline
+Mediciones sobre voluntarios humanos  &  &  &  &  &  \\ \hline
+Análisis de mediciones sobre seres humanos &  &  &  &  &  \\ \hline
 \end{tabularx}%
 %}
 \end{table}
 
+	
+\pagebreak
 \section{17. Procesos de cierre}    
 \label{sec:cierre}
 
