@@ -71,6 +71,7 @@
 \usepackage{pgfgantt} 
 \usepackage{graphicx}
 \usepackage{rotating}
+%\usepackage{pdflscape}
 
 
 %\usepackage{tikz}
